@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Путешествие по Росии" />
     <meta name="keywords" content="HTML5, CSS" />
     <meta name="author" content="Андрей Чебанов" />
     <link rel="stylesheet" href="./vendor/fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
     <title>Путешествие по России</title>
-</head>
-<body class="page">
-
+  </head>
+  <body class="page">
     <header class="header">
-        <img class="header__logo" src="./images/logo_header.svg" alt="Логотип">
-        <div class="header__langs">
-            <a class="lang-link header__lang-link_active" href="#" target="_self">Ru</a>
-            <a class="lang-link" href="#" target="_self">En</a>
-        </div>
+      <img class="header__logo" src="./images/logo_header.svg" alt="Логотип" />
+      <div class="header__langs">
+        <a class="lang-link header__lang-link_active" href="#" target="_self"
+          >Ru</a
+        >
+        <a class="lang-link" href="#" target="_self">En</a>
+      </div>
     </header>
-        <main class="content">
-            <section class="lead">
-                <h1 class="lead__title">Путешествия по России</h1>
-                <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-                <div class="lead__container">
-                    <img class="lead__image" src="./images/polka.jpg" alt="Полка">
-                    <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
-                </div>
-            </section>
-            
-        </main>
-    
-    
-</body>
+    <main class="content">
+      <section class="lead">
+        <h1 class="lead__title">Путешествия по России</h1>
+        <p class="lead__subtitle">
+          Настоящая страна не в выпусках новостей, а здесь.
+        </p>
+        <div class="lead__container">
+          <img class="lead__image" src="./images/polka.jpg" alt="Полка" />
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+        </div>
+      </section>
+      <section class="intro">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">
+          По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
+          36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома,
+          не видели? На самом деле, Россия — это целая вселенная с ласковым
+          морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё
+          увидеть все эти красоты можно без миллионов на счету, загранпаспорта и
+          многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая
+          мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и
+          проехала 20 тысяч километров по родной стране. Мы выбрали и описали
+          некоторые интересные места, достойные вашего отпуска.
+        </p>
+        <ul class="intro__lists">
+            <li class="intro__list"><span class="intro__name">Часовых поясов</span> 11</li>
+            <li class="intro__list"><span class="intro__name">Объектов природного наследия ЮНЕСКО</span> 12</li>
+            <li class="intro__list"><span class="intro__name">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+            <li class="intro__list"><span class="intro__name">Природных заповедников</span> 105</li>
+            <li class="intro__list"><span class="intro__name">Аэропортов</span> 241</li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
