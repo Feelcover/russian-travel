@@ -206,5 +206,5 @@
     max-width: 1184px;
     display: grid;
     grid-template:repeat(4, 1fr)/ repeat(4, 1fr);
-    gap: 16px;
+    grid-gap: 16px;
 }
