@@ -315,7 +315,7 @@
 
 
 .cover{
-    width: 1184px;
+    width: 100%;
     min-width: 320px;
     max-width: 1184px;
     margin: 0 auto;
@@ -324,21 +324,23 @@
 }
 
 .cover__overlay{
-    display: flex;
-    flex-direction: column;
     max-width: 1184px;
     min-height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url(./images/background-trains.jpg);
     background-size: cover;
     background-position: center;
     color: #ffffff;
-    
+    text-decoration: none;
 }
 
 
 .cover__overlay::after {
     content: "";
-    display: flex;
+    display: block;
     background-color: #2A2C2F;
     opacity: 0.35;
     cursor: url(./images/cursor.png), pointer;
@@ -357,36 +359,35 @@
 
   
   .cover__content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cover__title{
     max-width: 560px;
-    max-height: 152px;
-    color: #FFFFFF;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
     text-align: center;
     margin: 0;
+    max-width: 560px;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__subtitle{
     max-width: 360px;
-    max-height: 66p;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #FFFFFF;
     margin: 0 auto;
     padding: 32px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 
