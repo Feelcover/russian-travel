@@ -1,0 +1,40 @@
+.place{
+    margin: 0 auto;
+    padding:0 0 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(320px, 460px) minmax(288px, 484px);
+    gap: 48px 40px;
+    grid-template-areas: 
+    "place__title place__website"
+    "place__image place__paragraphs";
+    transition: all 0.5s ease-out;
+}
+
+.place:last-child{
+    padding: 0 0 92px;
+}
+
+@media screen and (max-width: 768px){
+
+.place{
+    padding:0 0 73px;
+}
+
+.place:last-child{
+    padding: 0 0 90px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.place{
+    padding:0 0 50px;
+}
+    
+.place:last-child{
+    padding: 0 0 66px;
+}
+    
+}

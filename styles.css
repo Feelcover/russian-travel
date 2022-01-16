@@ -3,9 +3,10 @@
     background-color: #2A2C2F;
     max-width: 1280px;
     min-width: 320px;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -26,22 +27,61 @@
     min-height: 80px;
     width: 100%;
     justify-content: space-between;
+    margin: 0 auto;
+    transition: all 0.5s ease-out;
 }
+@media screen and (max-width: 730px) {
+.header{
+    min-height: 58px;   
+    }
+}
+
 
 .header__logo{
     width: 176px;
     height: 52px;
     margin: 28px 0 0 48px;
+    transition: all 0.5s ease-out;
 }
+@media screen and (max-width: 768px){
+.header__logo{
+    margin: 28px 0 0 24px;
+}
+}
+@media screen and (max-width: 730px){
+.header__logo{
+    width: 142px;
+    height: 42px;
+    margin: 16px 0 0 16px;
+}
+}
+
 
 .header__langs{
     display: flex;
     align-self: flex-start;
     margin: 46px 48px 0 0;
+    transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+
+.header__langs{
+    margin: 46px 24px 0 0;
+}
+
+}
+
+@media screen and (max-width: 730px){
+ 
+.header__langs{
+    margin: 30px 16px 0 0;
+}
+
 }
 
 
-.lang-link{
+.header__lang-link{
     width: 30px;
     height: 28px;
     margin-left: 18px;
@@ -50,14 +90,14 @@
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
-    color: white;
-
+    color: white;   
+    transition: all 0.5s ease-out;
 }
-.lang-link:first-child{
+.header__lang-link:first-child{
     margin: 0;
 }
 
-.lang-link:hover{
+.header__lang-link:hover{
     opacity: 0.7;
     cursor: url(./images/cursor.png), pointer;
     transition: all 0.4s ease-in-out;
@@ -67,6 +107,16 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 730px){
+
+.header__lang-link{
+    width: 22px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+}
 
 
 
@@ -88,8 +138,25 @@
     flex-direction: column;
     padding-top: 56px;
     align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 1024px){
+
+.lead{
+    padding: 48px 48px 0;
+}
 
 }
+
+@media screen and (max-width: 1023px){
+
+.lead{
+    padding: 48px 0 0 0;
+}
+    
+}
+
 
 .lead__title{
     width: 720px;
@@ -101,7 +168,22 @@
     text-align: center;
     margin: 0;
     padding-bottom: 32px;
+    transition: all 0.5s ease-out;
 }
+
+@media screen and (max-width: 730px){
+
+.lead__title{
+    width: 288px;
+    height: 88px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    padding-bottom: 16px;
+}
+
+}
+
 
 .lead__subtitle{
     width: 640px;
@@ -113,15 +195,50 @@
     line-height: 36px;
     text-align: center;
     margin: 0;
+    transition: all 0.5s ease-out;
 }
 
-.lead__container{
-    margin-top: 64px;
+@media screen and (max-width: 730px){
+
+.lead__subtitle{
+    width: 288px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
 }
+
+}
+
+
+.lead__container{
+    margin: 0;
+    padding-top: 64px;
+    transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 1024px){
+
+.lead__container{
+    padding-top: 56px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.lead__container{
+    padding-top: 40px;
+}
+    
+}
+
 
 .lead__image{
     width: 100%;
+    transition: all 0.5s ease-out;
 }
+
+
 
 .lead__caption{
     width: 100%;
@@ -134,37 +251,98 @@
     line-height: 14px;
     letter-spacing: 1.5px;
     margin-top: 8px;
+    transition: all 0.5s ease-out;
 }
 
+@media screen and (max-width: 768px){
+
+.lead__caption{
+    padding-left: 24px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.lead__caption{
+    padding-left: 16px;
+}
+    
+}
 
 
 
 
 .intro{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     padding-top: 92px;
     max-width: 984px;
     min-width: 288px;
-    margin:0 auto;
+    margin: 0 auto;
+    transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 1024px){
+
+.intro{ 
+    margin: 0;
+    padding-left: 48px;
+}
+}
+
+@media screen and (max-width: 780px){
+
+.intro{
+    padding: 88px 24px 0 24px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.intro{
+    padding: 64px 16px 0 16px;
+}
+    
 }
 
 
 .intro__title{
-    width: 690px;
-    height: 58px;
+    max-width: 690px;
+    min-width: 288px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
     line-height: 58px;
     margin: 0;
+    transition: all 0.5s ease-out;
+    
 }
 
+
+@media screen and (max-width: 768px){
+
+.intro__title{
+    font-size: 54px;
+    line-height: 58px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.intro__title{
+    font-size: 32px;
+    line-height: 35px;
+}
+    
+}
+
+
 .intro__text{
-    width: 690px;
-    height: 208px;
+    max-width: 690px;
+    min-width: 288px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -172,17 +350,23 @@
     line-height: 163%;
     margin: 0;
     padding: 40px 0 33px;
+    transition: all 0.5s ease-out;
 }
+
+
 
 .intro__lists{
     display: flex;
     flex-direction: column;
-    width: 690px;
+    min-width: 288px;
+    max-width: 690px;
     height: 90px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+
 
 .intro__name{
     font-family: 'Inter';
@@ -210,16 +394,63 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 92px 0;
+    padding: 92px 24px;
+    transition: all 0.5s ease-out;
 }
+
+@media screen and (max-width: 768px){
+
+.photo-grid{
+    padding: 88px 24px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.photo-grid{
+    padding: 64px 0;
+}
+    
+}
+
+
 
 .photo-grid__area{
     max-width: 1184px;
     display: grid;
-    grid-template:repeat(3, 213px)/ repeat(4, 284px);
+    grid-template-columns:repeat(4, 1fr);
     gap: 16px;
-    
+    transition: all 0.5s ease-out;
 }
+
+@media screen and (max-width: 1024px){
+
+.photo-grid__area{
+    grid-template-columns: repeat(3, 300px); 
+    gap: 14px;   
+}
+        
+}
+
+@media screen and (max-width: 974px){
+
+.photo-grid__area{
+    grid-template-columns: repeat(2, 352px); 
+    gap: 16px;   
+}
+            
+}
+
+@media screen and (max-width: 730px){
+
+.photo-grid__area{
+    grid-template-columns: repeat(1, 288px); 
+    gap: 12px;   
+}
+                
+}
+
 
 .photo-grid__item{
     width: 100%;
@@ -231,27 +462,100 @@
 
 
 .places{
+    max-width: 984px;
     margin: 0 auto;
-    width: 100%;
-
+    transition: all 0.5s ease-out;
 }
+
+@media screen and (max-width: 1024px){
+
+.places{
+    max-width: 928px;  
+}
+    
+}
+
+@media screen and (max-width: 768px){
+
+.places{
+    max-width: 720px;  
+}
+        
+}
+
+
+@media screen and (max-width: 730px){
+
+.places{
+    max-width: 320px; 
+}
+            
+}
+
+
+
+
 
 .place{
     margin: 0 auto;
     padding:0 0 80px;
     width: 100%;
-    max-width: 984px;
     display: grid;
-    grid-template-columns: minmax(320px, 460px) minmax(288px, 494px);
+    grid-template-columns: minmax(320px, 460px) minmax(288px, 484px);
     gap: 48px 40px;
     grid-template-areas: 
     "place__title place__website"
     "place__image place__paragraphs";
+    transition: all 0.5s ease-out;
 }
 
 .place:last-child{
-    padding: 92px;
+    padding: 0 0 92px;
 }
+
+@media screen and (max-width: 1024px){
+
+.place{
+    gap: 48px 32px;
+}
+    
+    
+}
+
+@media screen and (max-width: 768px){
+
+.place{
+    padding:0 0 73px;
+    gap: 48px 28px;
+}
+
+.place:last-child{
+    padding: 0 0 90px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.place{
+    padding:0 0 50px;
+    grid-template-columns: minmax(288px, 320px);
+    grid-template-areas:
+        "place__title"
+        "place__website"
+        "place__image"
+        "place__paragraphs";
+    row-gap: 32px;
+}
+}
+    
+
+.place:last-child{
+    padding: 0 0 66px;
+}
+    
+
+
 
 .place__title{
     grid-area: place__title;
@@ -260,7 +564,29 @@
     font-size: 72px;
     line-height: 76px;
     margin: 0;
+    transition: all 0.5s ease-out;
 }
+
+@media screen and (max-width: 768px){
+
+.place__title{
+    font-size: 42px;
+    line-height: 46px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+.place__title{
+    font-size: 32px;
+    line-height: 35px;
+    padding: 0 16px;
+    margin: 0;
+}
+    
+}
+
 
 .place__image{
     grid-area: place__image;
