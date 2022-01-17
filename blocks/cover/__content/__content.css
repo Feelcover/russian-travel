@@ -5,5 +5,5 @@
 }
 
 .cover__content:hover{
-    cursor: url(./images/cursor.png), pointer;
+    cursor: url(../../../images/cursor.png), pointer;
 }

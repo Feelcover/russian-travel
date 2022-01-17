@@ -1,5 +1,7 @@
 .lead{
     width: 100%;
+    max-width: 984px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-top: 56px;
@@ -10,6 +12,7 @@
 @media screen and (max-width: 1024px){
 
 .lead{
+    max-width: 928px;
     padding: 48px 48px 0;
 }
 

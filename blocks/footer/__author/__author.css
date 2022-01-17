@@ -9,6 +9,6 @@
 
 .footer__author:hover{
     opacity: 0.7;
-    cursor: url(./images/cursor.png), pointer;
+    cursor: url(../../../images/cursor.png), pointer;
     transition: all 0.4s ease-in-out;
 }
