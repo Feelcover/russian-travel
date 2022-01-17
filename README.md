@@ -16,9 +16,9 @@
 * Git
 * Git Pages
 
-### Ниже ссылка на просмотр работы:
+### Cсылка на просмотр работы: [ССЫЛКА](https://feelcover.github.io/russian-travel/)
 
-                                        [ССЫЛКА](https://feelcover.github.io/russian-travel/)
+                                        
 
 
-                                        **Спасибо за внимание**
+**Спасибо за внимание**
