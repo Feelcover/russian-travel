@@ -1,0 +1,19 @@
+.footer__item{
+    padding-right: 18px;
+    transition: all 0.6s ease-in-out;
+}
+.footer__item:last-child{
+    padding: 0;
+}
+
+@media screen and (max-width:650px) {
+
+.footer__item{
+    padding-bottom: 32px;
+}
+
+.footer__item:last-child{
+    padding-bottom: 48px;
+}
+            
+}

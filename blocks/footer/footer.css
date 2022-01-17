@@ -1,0 +1,33 @@
+.footer{
+    max-width: 1184px;
+    width: 100%;
+    padding: 92px 0 24px;
+    color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width:1200px) {
+
+.footer{
+    padding: 92px 48px 24px;
+}
+    
+}
+
+@media screen and (max-width:800px) {
+
+.footer{
+    padding: 88px 24px 24px;
+}
+}
+
+@media screen and (max-width:700px) {
+
+.footer{
+    padding: 88px 16px 24px;
+    flex-direction: column;
+}
+        
+}
