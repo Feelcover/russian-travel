@@ -1,7 +1,7 @@
 .lead__caption{
     width: 100%;
     text-transform: uppercase;
-    height: 14px;
+    max-height: 14px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
