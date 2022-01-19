@@ -1,4 +1,6 @@
 .content{
     width: 100%;
     color: white;
+    box-sizing: border-box;
+    overflow: hidden;
 }

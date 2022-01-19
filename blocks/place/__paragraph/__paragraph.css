@@ -9,8 +9,12 @@
     margin-bottom: 28px;
 }
 
+.place__paragraph:last-child{
+    margin-bottom: 0;
+}
 
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 770px){
 
 .place__paragraph{
     font-size: 16px;
@@ -19,5 +23,10 @@
 .place__paragraph:first-child{
     margin-bottom: 25px;
 }
+
+.place__paragraph:last-child{
+    margin-bottom: 0;
+}
+
 
 }
